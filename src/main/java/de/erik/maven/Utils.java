@@ -7,11 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Utils {
+class Utils {
 
     private static final String RESOURCE_PATH = "/de/erik/maven/chucknorris/";
 
-    public static String readPicture() throws IOException {
+    private Utils() {}
+
+    static String readPicture() throws IOException {
         final BufferedReader br = new BufferedReader(new InputStreamReader(Utils.class.getResourceAsStream(RESOURCE_PATH + "image/chuck.txt")));
         final StringBuilder picture = new StringBuilder();
 
@@ -25,7 +27,7 @@ public class Utils {
         return picture.toString();
     }
 
-    public static List<String> readQuotes() throws IOException {
+    static List<String> readQuotes() throws IOException {
         final BufferedReader br = new BufferedReader(new InputStreamReader(Utils.class.getResourceAsStream(RESOURCE_PATH + "quotes/quotes.txt")));
         final List<String> quotes = new ArrayList<String>();
 
@@ -39,7 +41,7 @@ public class Utils {
         return quotes;
     }
 
-    public static String pickRandomQuote() throws IOException {
+    static String pickRandomQuote() throws IOException {
         final List<String> quotes = readQuotes();
 
         return quotes.get(new Random().nextInt(quotes.size()));
