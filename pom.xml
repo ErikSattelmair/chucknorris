@@ -18,10 +18,6 @@
     </developer>
   </developers>
 
-  <scm>
-    <url>https://github.com/ErikSattelmair</url>
-  </scm>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.maven</groupId>
