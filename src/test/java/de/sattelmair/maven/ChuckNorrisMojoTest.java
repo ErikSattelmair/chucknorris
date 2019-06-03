@@ -12,8 +12,6 @@ import static org.junit.Assert.assertTrue;
 
 public class ChuckNorrisMojoTest {
 
-    private static final String RESOURCE_PATH = "/de/erik/maven/chucknorris/";
-
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 

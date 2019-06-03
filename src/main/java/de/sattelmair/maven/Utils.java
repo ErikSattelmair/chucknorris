@@ -9,7 +9,7 @@ import java.util.Random;
 
 class Utils {
 
-    private static final String RESOURCE_PATH = "/de/erik/maven/chucknorris/";
+    private static final String RESOURCE_PATH = "/de/sattelmair/maven/chucknorris/";
 
     private Utils() {}
 
@@ -29,7 +29,7 @@ class Utils {
 
     static List<String> readQuotes() throws IOException {
         final BufferedReader br = new BufferedReader(new InputStreamReader(Utils.class.getResourceAsStream(RESOURCE_PATH + "quotes/quotes.txt")));
-        final List<String> quotes = new ArrayList<String>();
+        final List<String> quotes = new ArrayList<>();
 
         String line;
         while ((line = br.readLine()) != null) {
