@@ -1,4 +1,4 @@
-package de.erik.maven;
+package de.sattelmair.maven;
 
 import java.io.BufferedReader;
 import java.io.IOException;

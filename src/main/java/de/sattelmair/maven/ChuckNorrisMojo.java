@@ -1,4 +1,4 @@
-package de.erik.maven;
+package de.sattelmair.maven;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
